@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.uestc.mymoa.ParentLayoutOfChildViewPager
+        android:id="@+id/parentOfViewPagerLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="16dp">
+
+                    <ImageView
+                        android:id="@+id/indicatorImage1"
+                        android:layout_width="8dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/indicatorImage2"
+                        android:layout_width="8dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/indicatorImage3"
+                        android:layout_width="8dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/indicatorImage4"
+                        android:layout_width="8dp"
+                        android:layout_height="2dp"
+                        android:layout_margin="4dp"
+                        android:background="@color/white" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/postViewPager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            </android.support.v4.view.ViewPager>
+        </FrameLayout>
+    </com.uestc.mymoa.ParentLayoutOfChildViewPager>
+
+    <GridView
+        android:id="@+id/newsCategoryGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="1dp" />
+
+</LinearLayout>

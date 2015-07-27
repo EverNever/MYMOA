@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="5dp">
+       <TextView
+           android:id="@+id/commentorText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="15sp"
+           android:paddingLeft="5dp"
+           android:text="周杰宝"/>
+       <TextView
+           android:id="@+id/daterText03"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="2015-06-19     18:35:48"
+           android:textSize="15sp"
+           android:layout_marginLeft="150dp"/>
+   </LinearLayout>
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/commentText01"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+
+</LinearLayout>

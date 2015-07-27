@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <EditText
+        android:id="@+id/file_edi_et_text"
+        android:text=""
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingBottom="8dp"
+        />
+    <Button
+        android:id="@+id/file_btn_edi_save"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="save"
+        android:textSize="26sp"
+        />
+</LinearLayout>

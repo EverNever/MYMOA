@@ -15,7 +15,7 @@
             android:label="@string/app_name">
         </activity>
         <activity
-            android:name=".ui.SelectActivity"
+            android:name=".ui.SelectMainActivity"
             android:theme="@style/NoActionBarTheme"
             android:label="@string/app_name">
         </activity>
@@ -31,6 +31,22 @@
         <activity
             android:name=".ui.SigninActivity"
             android:label="注册">
+        </activity>
+
+                <activity android:name=".ui.FileManageActivity"
+            android:label="文档列表">
+        </activity>
+        <activity android:name=".ui.FileManageAddActivity"
+            android:label="新建文档">
+        </activity>
+        <activity android:name=".ui.FileManageDetailActivity"
+            android:label="文档详情">
+        </activity>
+        <activity android:name=".ui.FileManageSearchActivity"
+            android:label="文档搜索">
+        </activity>
+        <activity android:name=".ui.FileManageEditActivity"
+            android:label="编辑文档">
         </activity>
     </application>
 
