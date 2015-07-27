@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/backButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/realeseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新闻详情"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="170dp"
+            android:textSize="26sp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/titleText03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="周杰宝家母猪疑被侵犯，集体发春"
+        android:textSize="25dp"
+
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/managerText02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张 三"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/daterText02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-06-18    18:35:22"
+            android:textSize="16sp"
+            android:layout_marginLeft="130dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        <TextView
+            android:id="@+id/stateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newsImage" />
+        <TextView
+            android:id="@+id/contentText02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stateText"/>
+        <TextView
+            android:id="@+id/commentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论："
+            android:textSize="20sp"
+            android:layout_below="@+id/contentText02"/>
+        <ListView
+            android:id="@+id/commentList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commentText"></ListView>
+    </RelativeLayout>
+
+</LinearLayout>
