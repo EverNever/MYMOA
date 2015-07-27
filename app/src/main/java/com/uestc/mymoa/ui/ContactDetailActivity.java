@@ -45,7 +45,7 @@ public class ContactDetailActivity extends Activity {
 
                 new AlertDialog.Builder(ContactDetailActivity.this)
                         .setTitle("删除联系人")
-                        .setMessage("确定删除联系人")
+                        .setMessage("确定要删除该联系人吗？")
                         .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
