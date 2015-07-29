@@ -7,10 +7,11 @@
     <color name="whiteDark">#ccffffff</color>
     <color name="whiteAlpha">#44ffffff</color>
     <!-- 灰色 -->
+    <color name="grey">#f0f0f0</color>
     <color name="greyAlpha">#a0a0a0</color>
     <!-- 主颜色 -->
     <color name="colorPrimary">#444</color>
-    <color name="colorPrimaryDark">#000</color>
+    <color name="colorPrimaryDark">#66222222</color>
     <!-- 强调色 -->
     <color name="colorAccent">#ff9dc92a</color>
     <color name="colorAccentDark">#cc9dc92a</color>
@@ -26,5 +27,7 @@
     <color name="colorButtonLoginDark">#ccee783f</color>
     
     <color name="colorBgPost">#ff007bbb</color>
+
+    <color name="colorBgMain">#f0f0f0</color>
 
 </resources>

@@ -4,28 +4,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
    <LinearLayout
-       android:layout_width="wrap_content"
+       android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:orientation="horizontal"
-       android:layout_marginTop="5dp">
+       android:layout_marginTop="5dp"
+       android:layout_weight="1">
        <TextView
            android:id="@+id/commentorText"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:textSize="15sp"
+           android:textSize="25sp"
            android:paddingLeft="5dp"
-           android:text="周杰宝"/>
+           android:text="周杰宝"
+           android:layout_gravity="center_vertical"/>
        <TextView
-           android:id="@+id/daterText03"
+           android:id="@+id/dateText03"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:text="2015-06-19     18:35:48"
-           android:textSize="15sp"
-           android:layout_marginLeft="150dp"/>
+           android:textSize="20sp"
+           android:layout_marginLeft="100dp"
+           android:layout_gravity="center_vertical"/>
    </LinearLayout>
    <RelativeLayout
        android:layout_width="wrap_content"
-       android:layout_height="wrap_content">
+       android:layout_height="wrap_content"
+       android:layout_weight="15">
        <TextView
            android:id="@+id/commentText01"
            android:layout_width="wrap_content"

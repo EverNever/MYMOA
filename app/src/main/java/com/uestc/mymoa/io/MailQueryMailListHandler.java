@@ -1,5 +1,7 @@
 package com.uestc.mymoa.io;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.lidroid.xutils.HttpUtils;
@@ -9,6 +11,7 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 import com.uestc.mymoa.constant.Api;
+import com.uestc.mymoa.constant.Id;
 
 import java.lang.reflect.Type;
 import java.util.HashMap;
@@ -41,6 +44,10 @@ public class MailQueryMailListHandler extends IOHandler {
                 }.getType();
                 Gson gson = new Gson();
                 List<HashMap<String, Object>> list = gson.fromJson(responseInfo.result, listType);
+
+                Log.i("run1", "--------------" + responseInfo.result);
+                Log.i("run2", "--------------" + Id.userId);
+
                 callback.onSuccess(list);
             }
 

@@ -179,12 +179,12 @@ public class MainActivity extends BaseActivity {
 
         if (!isOperationMenuShowed) {
 
-            operationMenu = new PopupWindow(view, getWindow().getDecorView().getWidth() / 3, ViewGroup.LayoutParams.WRAP_CONTENT);
+            operationMenu = new PopupWindow(view, getWindow().getDecorView().getWidth()*1 / 2, ViewGroup.LayoutParams.WRAP_CONTENT);
             operationMenu.setAnimationStyle(R.style.popWindowAnimation);
             Rect frame = new Rect();
             getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
             int statusBarHeight = frame.top;
-            operationMenu.showAtLocation(viewpager, Gravity.NO_GRAVITY, getWindow().getDecorView().getWidth(), toolbar.getHeight() + statusBarHeight);
+            operationMenu.showAtLocation(viewpager, Gravity.NO_GRAVITY, getWindow().getDecorView().getWidth()*15/32, toolbar.getHeight() + statusBarHeight);
 
             isOperationMenuShowed = true;
 
@@ -203,7 +203,7 @@ public class MainActivity extends BaseActivity {
                             Toast.makeText(MainActivity.this, (CharSequence) getOperations().get(position).get("operation"), Toast.LENGTH_SHORT).show();
                             break;
                         case 2:
-                            startActivity(new Intent(MainActivity.this, MessageReleaseActivity.class));
+                            startActivity(new Intent(MainActivity.this, MailSendNewActivity.class));
                             Toast.makeText(MainActivity.this, (CharSequence) getOperations().get(position).get("operation"), Toast.LENGTH_SHORT).show();
                             break;
                         case 3:
@@ -225,7 +225,6 @@ public class MainActivity extends BaseActivity {
         list.add("发布公告");
         list.add("发布新闻");
         list.add("发送消息");
-        list.add("新建联系人");
 
         for (int i = 0; i < list.size(); i++) {
             Map<String, Object> map = new HashMap<>();

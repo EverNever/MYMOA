@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mailUnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp"
+        android:gravity="center"
+        android:text="name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mailContentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:text="content"
+        android:textColor="@color/colorAccent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mailTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="time"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tagText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mailTimeText"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="tag"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+</LinearLayout>

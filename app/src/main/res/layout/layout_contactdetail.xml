@@ -3,30 +3,76 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/nameText"
-        android:layout_weight="1"
-        android:gravity="center_horizontal"
-        android:paddingTop="64dp"
-        android:textSize="30sp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_weight="2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/bg_contact_detail">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_contact_avatar"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_black_87"
+                android:gravity="center_horizontal"
+                android:id="@+id/unameText"/>
+        </LinearLayout>
 
-    <TextView
+  </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/phonenumText"
-        android:layout_weight="0.6"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:layout_gravity="center_horizontal" />
+        android:layout_weight="0.1"
+       >
 
-    <TextView
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_weight="0.3">
+           <ImageView
+               android:layout_width="56dp"
+               android:layout_height="56dp"
+               android:id="@+id/imageView"
+               android:src="@drawable/ic_contact_phone"
+               android:layout_gravity="center_horizontal"
+               android:layout_centerVertical="true"
+               android:layout_centerHorizontal="true"
+               android:layout_margin="8dp"/>
+       </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/phonenumText" />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:layout_gravity="center_horizontal" />
+        android:layout_weight="5">
+
+    </LinearLayout>
 
     <Button
         android:layout_width="match_parent"

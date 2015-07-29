@@ -4,13 +4,16 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical">
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark"/>
     <ListView
         android:id="@+id/operationMainList"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginBottom="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
-        android:divider="@null"></ListView>
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/selector_main_menu">
+    </ListView>
 </LinearLayout>

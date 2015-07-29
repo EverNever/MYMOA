@@ -2,6 +2,7 @@ package com.uestc.mymoa.common.view;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.support.v7.app.AlertDialog;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;

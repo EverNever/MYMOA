@@ -54,6 +54,7 @@ public class PostQueryPostListHandler extends IOHandler {
 
                     List<HashMap<String, Object>> list = gson.fromJson(responseInfo.result, listType);
                     callback.onSuccess(list);
+
                 } else {
                     Gson gson = new Gson();
                     RequestStatus status = gson.fromJson(responseInfo.result, RequestStatus.class);

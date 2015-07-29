@@ -38,7 +38,7 @@ public class NewsQueryNewsContent extends IOHandler {
 
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
-                String result = String.valueOf(responseInfo);
+                String result = String.valueOf(responseInfo.result);
 
                 if (result.indexOf("newsid") != -1) {
                     Type mapType = new TypeToken<HashMap<String, Object>>() {

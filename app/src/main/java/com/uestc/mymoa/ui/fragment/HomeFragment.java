@@ -123,7 +123,7 @@ public class HomeFragment extends Fragment {
         };
         if (!isTimerRunning) {
             isTimerRunning = true;
-            timer.schedule(timerTask, 0, 2000);
+            timer.schedule(timerTask, 0, 4000);
         }
     }
 
@@ -155,7 +155,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), NewsListActivity.class);
-                intent.putExtra("news_category", position);
+                intent.putExtra("news_category", position + 1);
                 startActivity(intent);
             }
         });

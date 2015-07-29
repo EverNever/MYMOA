@@ -1,11 +1,12 @@
 package com.uestc.mymoa.ui;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 
 import com.lidroid.xutils.http.RequestParams;
 import com.uestc.mymoa.R;
+import com.uestc.mymoa.common.view.InputDialog;
 import com.uestc.mymoa.io.ContactHandler;
 import com.uestc.mymoa.io.IOCallback;
 import com.uestc.mymoa.io.model.RequestStatus;
@@ -149,18 +151,14 @@ public class ContactGroupListActivity extends BaseActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_add) {
-
-            final EditText addGroupEdit = new EditText(ContactGroupListActivity.this);
-            addGroupEdit.setHint("请输入群组名称");
-            new  AlertDialog.Builder(ContactGroupListActivity.this)
+            final InputDialog inputDialog = new InputDialog(ContactGroupListActivity.this);
+            inputDialog.setInputEditHint("请输入群组名称");
+            inputDialog.buider
                     .setTitle("新建联系人群组")
-                    .setIcon(android.R.drawable.ic_dialog_info)
-                    .setView(addGroupEdit)
                     .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-
-                            addGroup(addGroupEdit.getText().toString());
+                            addGroup(inputDialog.getInputEditText());
                             list.clear();
                             getGroupList();
                         }

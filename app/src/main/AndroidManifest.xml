@@ -13,16 +13,13 @@
         android:theme="@style/ActionBarTheme">
         <activity
             android:name=".ui.MainActivity"
-            android:theme="@style/NoActionBarTheme"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/NoActionBarTheme">
         </activity>
-
-
-
         <activity
             android:name=".ui.UserLoginActivity"
-            android:label="@string/app_name">
-        </activity>
+            android:label="@string/app_name"></activity>
+
         <activity
             android:name=".ui.UserSelectActivity"
             android:label="@string/app_name"
@@ -51,24 +48,26 @@
         <activity android:name=".ui.FileManageEditActivity"
             android:label="编辑文档">
         </activity>
-
-
-
         <activity
             android:name=".ui.PostAddActivity"
             android:label="发布公告"></activity>
         <activity
-            android:name=".ui.MessageReleaseActivity"
-            android:label="发布新消息"></activity>
+            android:name=".ui.MailSendNewActivity"
+            android:label="发送新消息"></activity>
+        <activity
+            android:name=".ui.MailItemContentActivity"
+            android:label="消息内容"></activity>
         <activity
             android:name=".ui.NewsListActivity"
             android:label="新闻列表"></activity>
         <activity
             android:name=".ui.ContactGroupListActivity"
-
+<<<<<<< HEAD
             android:label="我的群租"></activity>
-
-
+        <activity android:name=".ui.NewsContentActivity"
+            android:label="新闻详情"></activity>
+=======
+            android:label="我的群组"></activity>
 
         <activity
             android:name=".ui.ContactGroupDetailActivity"
@@ -76,6 +75,8 @@
         <activity
             android:name=".ui.ContactDetailActivity"
             android:label="联系人信息"></activity>
+>>>>>>> 7e73fe1b8604c8aa190ded8b331f9e542704c36c
     </application>
+
 
 </manifest>

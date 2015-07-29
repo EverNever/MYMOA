@@ -42,7 +42,7 @@
 
         android:layout_marginTop="5dp">
         <TextView
-            android:id="@+id/managerText02"
+            android:id="@+id/authorText02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="张 三"
@@ -50,7 +50,7 @@
             android:textSize="16sp"
             />
         <TextView
-            android:id="@+id/daterText02"
+            android:id="@+id/dateText02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2015-06-18    18:35:22"

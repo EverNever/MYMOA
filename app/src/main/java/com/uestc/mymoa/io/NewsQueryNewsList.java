@@ -45,7 +45,7 @@ public class NewsQueryNewsList extends IOHandler {
 
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
-                String result = String.valueOf(responseInfo);
+                String result = String.valueOf(responseInfo.result);
                 if (result.indexOf("[") != -1) {
                     Type listType = new TypeToken<List<HashMap<String, Object>>>() {
                     }.getType();

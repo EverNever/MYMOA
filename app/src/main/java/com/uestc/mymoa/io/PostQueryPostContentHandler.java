@@ -43,7 +43,7 @@ public class PostQueryPostContentHandler extends IOHandler {
 
             @Override
             public void onSuccess(ResponseInfo<String> responseInfo) {
-                String result = String.valueOf(responseInfo);
+                String result = String.valueOf(responseInfo.result);
 
                 if (result.indexOf("title") != -1) {
                     Type mapType = new TypeToken<HashMap<String, Object>>() {
